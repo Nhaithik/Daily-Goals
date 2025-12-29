@@ -1,86 +1,94 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Georgia, serif;
-  background: #faf7f2;
-  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 20px;
 }
 
-/* MAIN LAYOUT */
-.container {
-  display: flex;
-  height: 100vh;
+/* NAV */
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2c3e50;
 }
 
-/* LEFT SIDE */
-.left {
-  flex: 1;
+/* LOGIN PAGE */
+.login-body {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.left img {
-  max-width: 80%;
+.login-container {
+  display: flex;
+  gap: 40px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* RIGHT SIDE */
-.right {
-  flex: 1;
+.login-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 60px;
+  width: 250px;
 }
 
-.right h1 {
-  font-size: 48px;
+.login-card input {
+  padding: 10px;
   margin-bottom: 10px;
 }
 
-.subtitle {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-/* LOGIN CARD */
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 16px;
-  width: 100%;
-  max-width: 380px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.card label {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 6px;
-  margin-top: 15px;
-}
-
-.card input {
-  width: 100%;
-  padding: 12px;
-  border-radius: 10px;
+.login-card button {
+  padding: 10px;
+  background: #f7e26b;
   border: none;
-  background: #f2f2f2;
-  font-size: 14px;
-}
-
-.card button {
-  width: 100%;
-  margin-top: 25px;
-  padding: 14px;
-  border: none;
-  border-radius: 25px;
-  background: #f5e36b;
-  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* DASHBOARD */
+.goal-box {
+  margin-top: 20px;
+}
+
+input {
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+li {
+  background: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+/* ANIMATION */
+.fade-in {
+  animation: fade 0.4s ease-in;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .login-container {
+    flex-direction: column;
+  }
 }
