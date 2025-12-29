@@ -24,6 +24,9 @@ if (!sessionStorage.getItem("loggedIn")) {
 <h1>Daily Goals</h1>
 <p>Simple Habit Tracker for Students</p>
 
+<!-- ✅ Hero Image Added Here -->
+<img src="illustration.png" alt="Daily Goals Illustration" class="hero-img">
+
 <div class="goal-box">
   <input type="text" id="goalInput" placeholder="Enter today's goal">
   <button onclick="addGoal()">Add Goal</button>
@@ -32,6 +35,7 @@ if (!sessionStorage.getItem("loggedIn")) {
 <ul id="goalList"></ul>
 
 <script src="script.js"></script>
+
 <script>
 function logout() {
   sessionStorage.removeItem("loggedIn");
