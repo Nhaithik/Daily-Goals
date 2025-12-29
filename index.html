@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Daily Goals</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Daily Goals</a>
-  <a href="streaks.html">My Streaks</a>
-  <a href="progress.html">Activity</a>
-  <a href="timeline.html">Timeline</a>
-  <a href="background.html">Background</a>
-</nav>
+<div class="container">
 
-<h1>Daily Goals</h1>
-<p>Simple Habit Tracker for Students</p>
+  <!-- LEFT SIDE -->
+  <div class="left">
+    <img src="illustration.png" alt="Daily Goals Illustration">
+  </div>
 
-<input type="text" id="goalInput" placeholder="Enter today's goal">
-<button onclick="addGoal()">Add Goal</button>
+  <!-- RIGHT SIDE -->
+  <div class="right">
+    <h1>Daily Goals</h1>
+    <p class="subtitle">Simple Habit Tracker for Students</p>
 
-<ul id="goalList"></ul>
+    <div class="card">
+      <label>Email</label>
+      <input type="email" placeholder="Your email">
 
-<script src="script.js"></script>
+      <label>Password</label>
+      <input type="password" placeholder="Your password">
+
+      <button>Continue →</button>
+    </div>
+  </div>
+
+</div>
+
 </body>
 </html>
